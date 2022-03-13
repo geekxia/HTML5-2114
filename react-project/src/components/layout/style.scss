@@ -1,0 +1,56 @@
+html,body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+#root {
+  width: 100%;
+  height: 100%;
+  &>.ant-layout {
+    height: 100%;
+  }
+}
+.qf-sider {
+  color: white;
+  position: relative;
+  height: 100%;
+  .qf-logo {
+    text-align: center;
+    padding: 20px 0;
+    img {
+      display: inline-block;
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+    }
+  }
+  .qf-toggle {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+}
+.qf-header {
+  color: white;
+}
+
+.ant-layout-content {
+  position: relative;
+  .qf-content {
+    background: white;
+    position: absolute;
+    top: 15px;
+    bottom: 10px;
+    left: 15px;
+    right: 10px;
+    overflow: auto;
+    border-radius: 3px;
+    box-sizing: border-box;
+    padding: 15px;
+    min-width: 800px;
+  }
+}

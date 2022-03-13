@@ -1,0 +1,76 @@
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+$color: orange;
+.box {
+  color: $color;
+}
+
+.grid {
+  width: 300px;
+  margin: 0 auto;
+  &>div {
+    display: flex;
+    height: 100px;
+    &>span {
+      flex: 1;
+      height: 100%;
+      border: 1px solid #aaa;
+      line-height: 98px;
+      text-align: center;
+      color: orange;
+    }
+  }
+}
+
+.red { color: red; }
+.f1 { font-size: 30px; }
+.f2 { font-size: 50px; }
+
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  &>div {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+  }
+}
+
+header {
+  line-height: 80px;
+  border-bottom: 1px solid #eee;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  .on {
+    color: red;
+  }
+}
+article {
+  display: block;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+footer {
+  background-color: #333333;
+  color: white;
+  padding: 35px;
+}
+
+.cnode_tab {
+  line-height: 60px;
+  span {
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+  }
+  span.on {
+    color: white;
+    background: blue;
+  }
+}

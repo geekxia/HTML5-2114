@@ -1,0 +1,1 @@
+{"version":3,"file":"css/app.3144359089a37c85c98f.css","mappings":"AACA,KACE,YAFM,C","sources":["webpack://react-webpack/./src/assets/style.scss"],"sourcesContent":["$color: orange;\r\n.box {\r\n  color: $color;\r\n}\r\n"],"names":[],"sourceRoot":""}

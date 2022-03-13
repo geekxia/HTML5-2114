@@ -1,0 +1,70 @@
+.layer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.3);
+  .modal {
+    width: 520px;
+    background-color: white;
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    margin-left: -260px;
+    border-radius: 2px;
+    .header {
+      box-sizing: border-box;
+      padding: 0 20px;
+      line-height: 50px;
+      height: 50px;
+      border-bottom: 1px solid #eee;
+      overflow: hidden;
+      .title {
+        float: left;
+        font-weight: bold;
+        font-size: 14px;
+      }
+      .close {
+        float: right;
+        font-size: 14px;
+        cursor: pointer;
+      }
+    }
+    .body {
+      box-sizing: border-box;
+      padding: 20px;
+      font-size: 14px;
+    }
+    .footer {
+      box-sizing: border-box;
+      padding: 0 20px;
+      height: 50px;
+      border-top: 1px solid #eee;
+      overflow: hidden;
+      &>span {
+        float: right;
+        height: 30px;
+        padding: 0 15px;
+        box-sizing: border-box;
+        font-size: 12px;
+        margin-top: 10px;
+        line-height: 28px;
+        border: 1px solid #ccc;
+        border-radius: 2px;
+        cursor: pointer;
+        margin-left: 10px;
+      }
+      &>span.confirm {
+        background-color: blue;
+        color: white;
+        border-color: blue;
+      }
+      &>span.delete {
+        background-color: red;
+        color: white;
+        border-color: red;
+      }
+    }
+  }
+}
